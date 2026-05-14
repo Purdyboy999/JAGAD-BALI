@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagad Bali | Pusat Gypsum, Baja Ringan & PVC</title>
+    <meta name="description"
+        content="Toko material konstruksi terlengkap di Bali. Menyediakan gypsum, baja ringan, dan PVC berkualitas tinggi dengan desain minimalis dan harga terbaik.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/JBT.png" alt="Logo Jagad Bali" class="logo-img">
+                <div class="logo-text-wrapper">
+                    <span class="logo-text">JAGAD</span><span class="logo-accent">BALI</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="navHome">Beranda</a></li>
+                <li><a href="#services" data-i18n="navServices">Layanan</a></li>
+                <li><a href="#about" data-i18n="navAbout">Tentang Kami</a></li>
+                <li><a href="#contact" data-i18n="navContact">Kontak</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button id="lang-id" class="lang-btn active">ID</button>
+                    <span class="lang-divider">|</span>
+                    <button id="lang-en" class="lang-btn">EN</button>
+                </div>
+                <a href="#contact" class="btn btn-primary nav-cta" data-i18n="navCta">Hubungi Kami</a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title" data-i18n="heroTitle">Solusi Konstruksi<br>Premium di Bali</h1>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">Kami menyediakan material terbaik untuk atap dan plafon
+                Anda. Kualitas unggul untuk baja ringan, gypsum, dan PVC dengan estetika modern.</p>
+            <div class="hero-actions">
+                <a href="#services" class="btn btn-primary" data-i18n="heroBtn1">Lihat Layanan</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="heroBtn2">Konsultasi Gratis</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services / Products Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-i18n="secBadgeMat">Material Kami</span>
+                <h2 class="section-title" data-i18n="secTitleMat">Kualitas Tanpa Kompromi</h2>
+                <p class="section-description" data-i18n="secDescMat">Pilihan material terbaik untuk memastikan bangunan
+                    Anda kokoh dan indah.</p>
+            </div>
+
+            <div class="grid">
+                <!-- Card 1 -->
+                <div class="card service-card">
+                    <div class="service-img">
+                        <img src="assets/gypsum.png" alt="Gypsum Premium">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="card-title" data-i18n="cardTitle1">Gypsum Premium</h3>
+                        <p class="card-text" data-i18n="cardText1">Plafon gypsum dengan finishing sempurna untuk
+                            interior minimalis yang rapi dan elegan.</p>
+                        <button class="btn-jenis toggle-jenis" data-target="jenis-gypsum">
+                            <span class="btn-text" data-i18n="btnJenis">Lihat Jenis</span>
+                            <span class="btn-icon">▼</span>
+                        </button>
+                        <div class="jenis-list" id="jenis-gypsum">
+                            <div class="jenis-item">
+                                <img src="assets/gyp_jaya.jpg" onerror="this.src='assets/gypsum.png'" alt="Gypsum Jayaboard" class="jenis-img">
+                                <div class="jenis-text">
+                                    <h5 data-i18n="gyp1">Gypsum Jayaboard</h5>
+                                    <p data-i18n="descGyp1">Tahan lama dan tidak mudah melengkung. Standar industri.</p>
+                                </div>
+                            </div>
+                            <div class="jenis-item">
+                                <img src="assets/gyp_aplus.jpg" onerror="this.src='assets/gypsum.png'" alt="Gypsum A-Plus" class="jenis-img">
+                                <div class="jenis-text">
+                                    <h5 data-i18n="gyp2">Gypsum A-Plus</h5>
+                                    <p data-i18n="descGyp2">Pilihan ekonomis dengan kualitas terbaik untuk perumahan.</p>
+                                </div>
+                            </div>
+                            <div class="jenis-item">
+                                <img src="assets/gyp_elephant.jpg" onerror="this.src='assets/gypsum.png'" alt="Gypsum Elephant" class="jenis-img">
+                                <div class="jenis-text">
+                                    <h5 data-i18n="gyp3">Gypsum Elephant</h5>
+                                    <p data-i18n="descGyp3">Sangat baik untuk partisi dan tahan terhadap kelembapan ekstra.</p>
+                                </div>
+                            </div>
+                            <div class="jenis-item">
+                                <img src="assets/gyp_knauf.jpg" onerror="this.src='assets/gypsum.png'" alt="Gypsum Knauf" class="jenis-img">
+                                <div class="jenis-text">
+                                    <h5 data-i18n="gyp4">Gypsum Knauf</h5>
+                                    <p data-i18n="descGyp4">Kualitas internasional dari Jerman, ringan dan sangat kuat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card service-card">
+                    <div class="service-img">
+                        <img src="assets/baja.png" alt="Baja Ringan Kokoh">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="card-title" data-i18n="cardTitle2">Baja Ringan Kokoh</h3>
+                        <p class="card-text" data-i18n="cardText2">Rangka atap baja ringan berstandar SNI yang kuat,
+                            tahan lama, dan anti rayap untuk perlindungan maksimal.</p>
+                        <button class="btn-jenis toggle-jenis" data-target="jenis-baja">
+                            <span class="btn-text" data-i18n="btnJenis">Lihat Jenis</span>
+                            <span class="btn-icon">▼</span>
+                        </button>
+                        <div class="jenis-list" id="jenis-baja">
+                            <div class="jenis-item">
+                                <img src="assets/baja_kanal.jpg" onerror="this.src='assets/baja.png'" alt="Kanal C" class="jenis-img">
+                                <div class="jenis-text">
+                                    <h5 data-i18n="baja1">Kanal C (C75)</h5>
+                                    <p data-i18n="descBaja1">Profil utama yang sangat kuat untuk menopang beban genteng berat.</p>
+                                </div>
+                            </div>
+                            <div class="jenis-item">
+                                <img src="assets/baja_reng.jpg" onerror="this.src='assets/baja.png'" alt="Reng Baja Ringan" class="jenis-img">
+                                <div class="jenis-text">
+                                    <h5 data-i18n="baja2">Reng Baja Ringan</h5>
+                                    <p data-i18n="descBaja2">Bilah penahan genteng yang presisi dan anti karat.</p>
+                                </div>
+                            </div>
+                            <div class="jenis-item">
+                                <img src="assets/baja_hollow.jpg" onerror="this.src='assets/baja.png'" alt="Hollow Baja Ringan" class="jenis-img">
+                                <div class="jenis-text">
+                                    <h5 data-i18n="baja3">Hollow Baja Ringan</h5>
+                                    <p data-i18n="descBaja3">Baja ringan kotak untuk plafon, ringan namun tidak melengkung.</p>
+                                </div>
+                            </div>
+                            <div class="jenis-item">
+                                <img src="assets/baja_spandek.jpg" onerror="this.src='assets/baja.png'" alt="Spandek & Bondek" class="jenis-img">
+                                <div class="jenis-text">
+                                    <h5 data-i18n="baja4">Spandek & Bondek</h5>
+                                    <p data-i18n="descBaja4">Atap plat baja untuk bentangan panjang tanpa sambungan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card service-card">
+                    <div class="service-img">
+                        <img src="assets/pvc.png" alt="Plafon PVC Elegan">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="card-title" data-i18n="cardTitle3">Plafon PVC Elegan</h3>
+                        <p class="card-text" data-i18n="cardText3">Plafon PVC modern dengan beragam motif, tahan air,
+                            mudah dibersihkan, dan praktis dalam pemasangan.</p>
+                        <button class="btn-jenis toggle-jenis" data-target="jenis-pvc">
+                            <span class="btn-text" data-i18n="btnJenis">Lihat Jenis</span>
+                            <span class="btn-icon">▼</span>
+                        </button>
+                        <div class="jenis-list" id="jenis-pvc">
+                            <div class="jenis-item">
+                                <img src="assets/pvc_kayu.jpg" onerror="this.src='assets/pvc.png'" alt="PVC Motif Kayu" class="jenis-img">
+                                <div class="jenis-text">
+                                    <h5 data-i18n="pvc1">PVC Motif Kayu</h5>
+                                    <p data-i18n="descPvc1">Memberikan kesan hangat dan natural seperti kayu asli.</p>
+                                </div>
+                            </div>
+                            <div class="jenis-item">
+                                <img src="assets/pvc_marmer.jpg" onerror="this.src='assets/pvc.png'" alt="PVC Motif Marmer" class="jenis-img">
+                                <div class="jenis-text">
+                                    <h5 data-i18n="pvc2">PVC Motif Marmer</h5>
+                                    <p data-i18n="descPvc2">Tampil mewah nan elegan tanpa perlu memikirkan jamur.</p>
+                                </div>
+                            </div>
+                            <div class="jenis-item">
+                                <img src="assets/pvc_polos.jpg" onerror="this.src='assets/pvc.png'" alt="PVC Polos" class="jenis-img">
+                                <div class="jenis-text">
+                                    <h5 data-i18n="pvc3">PVC Polos / Putih</h5>
+                                    <p data-i18n="descPvc3">Sangat bersih dan minimalis, pilihan tepat untuk desain modern.</p>
+                                </div>
+                            </div>
+                            <div class="jenis-item">
+                                <img src="assets/pvc_list.jpg" onerror="this.src='assets/pvc.png'" alt="List Plafon PVC" class="jenis-img">
+                                <div class="jenis-text">
+                                    <h5 data-i18n="pvc4">List Plafon PVC</h5>
+                                    <p data-i18n="descPvc4">Aksesoris pinggiran dinding yang menyempurnakan bentuk plafon.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Banner Section -->
+    <section class="visual-banner">
+        <div class="container visual-container">
+            <div class="visual-content">
+                <h2 data-i18n="visTitle">Ciptakan Ruang Impian Anda</h2>
+                <p data-i18n="visDesc">Konsultasikan kebutuhan material Anda dengan tim ahli kami yang berpengalaman di
+                    seluruh area Bali.</p>
+                <a href="#contact" class="btn btn-primary" data-i18n="visBtn">Pesan Sekarang</a>
+            </div>
+            <div class="visual-image-wrapper">
+                <img src="assets/products.png" alt="Produk Material Jagad Bali" class="visual-image"
+                    id="products-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-badge" data-i18n="badgeAbout">Tentang Kami</span>
+                    <h2 class="section-title" data-i18n="titleAbout">Dedikasi untuk Konstruksi Bali</h2>
+                    <p class="about-description" data-i18n="descAbout1">Jagad Bali telah hadir untuk memenuhi kebutuhan
+                        material konstruksi modern di Pulau Dewata. Kami memahami bahwa setiap bangunan membutuhkan
+                        fondasi dan atap yang kuat sekaligus estetis.</p>
+                    <p class="about-description" data-i18n="descAbout2">Berkomitmen pada kualitas dan kepuasan
+                        pelanggan, kami menghadirkan produk pilihan dengan layanan terbaik dari hulu ke hilir.</p>
+                    <ul class="about-features">
+                        <li><span class="check-icon">✓</span> <span data-i18n="feat1">Material Bersertifikat</span></li>
+                        <li><span class="check-icon">✓</span> <span data-i18n="feat2">Harga Kompetitif</span></li>
+                        <li><span class="check-icon">✓</span> <span data-i18n="feat3">Pengiriman Cepat di Bali</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h4 class="stat-number">100+</h4>
+                        <p class="stat-label" data-i18n="stat1">Proyek Selesai</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4 class="stat-number">3+</h4>
+                        <p class="stat-label" data-i18n="stat2">Produk Unggulan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge" data-i18n="badgeContact">Hubungi Kami</span>
+                <h2 class="section-title" data-i18n="titleContact">Mulai Proyek Anda</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4 data-i18n="locTitle">Lokasi Toko</h4>
+                        <p data-i18n="locDesc">Jl. Raya Pembangunan No. 88<br>Denpasar, Bali</p>
+                    </div>
+                    <div class="info-item">
+                        <h4 data-i18n="waTitle">WhatsApp / Telepon</h4>
+                        <p>+62 812-3456-7890</p>
+                    </div>
+                    <div class="info-item">
+                        <h4 data-i18n="jamTitle">Jam Operasional</h4>
+                        <p data-i18n="jamDesc">Senin - Sabtu: 08:00 - 17:00 WITA<br>Minggu: Libur</p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form"
+                        onsubmit="event.preventDefault(); window.open('https://wa.me/6281234567890?text=Halo%20Jagad%20Bali,%20saya%20ingin%20berkonsultasi%20mengenai%20material.', '_blank');">
+                        <div class="form-group">
+                            <label for="name" data-i18n="formName">Nama Lengkap</label>
+                            <input type="text" id="name" required placeholder="Masukkan nama Anda"
+                                data-i18n-placeholder="formNamePlaceholder">
+                        </div>
+                        <div class="form-group">
+                            <label for="service" data-i18n="formService">Layanan yang Dibutuhkan</label>
+                            <select id="service" required>
+                                <option value="" disabled selected data-i18n="formOptionDef">Pilih Layanan</option>
+                                <option value="gypsum">Gypsum</option>
+                                <option value="baja-ringan">Baja Ringan</option>
+                                <option value="pvc">Plafon PVC</option>
+                                <option value="lainnya" data-i18n="formOptionLain">Lainnya</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" data-i18n="formBtn">Kirim via
+                            WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p data-i18n="foot1">&copy; 2026 Jagad Bali. Hak Cipta Dilindungi.</p>
+                <p data-i18n="foot2">Didesain dengan gaya minimalis elegan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
