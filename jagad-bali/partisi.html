@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jagad Bali | Partisi Gypsum & GRC Bali</title>
+<meta name="description" content="Jasa pemasangan partisi gypsum, GRC, dan kaca untuk rumah, kantor, villa di Bali. Profesional, rapi, dan bergaransi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{
+  fontFamily:{sans:['Inter','sans-serif']},
+  colors:{
+    brand:{50:'#f0fdf4',100:'#dcfce7',500:'#22c55e',600:'#16a34a',700:'#15803d'},
+    dark:'#0d1117',surface:'#161b22',
+    slate2:{50:'#f8fafc',800:'#1e293b',900:'#0f172a'}
+  },
+  boxShadow:{glow:'0 0 30px rgba(34,197,94,0.25)',soft:'0 10px 40px -10px rgba(0,0,0,0.1)'}
+}}}
+</script>
+</head>
+<body class="font-sans antialiased overflow-x-hidden bg-white text-gray-700">
+
+<!-- Navbar -->
+<nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm py-4">
+  <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/JBT.png" alt="Logo" class="h-10 w-auto">
+      <span class="font-bold text-xl text-gray-900">JAGAD<span class="text-brand-600">BALI</span></span>
+    </a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="#layanan" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Layanan</a>
+      <a href="#jenis" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Jenis Partisi</a>
+      <a href="#proyek" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Proyek</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="https://wa.me/6282132875755" target="_blank" class="hidden md:flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-glow">
+        <i class="ph-fill ph-whatsapp-logo text-xl"></i> Konsultasi
+      </a>
+      <button id="mobile-menu-btn" class="lg:hidden text-gray-800 p-2"><i class="ph ph-list text-3xl"></i></button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="lg:hidden hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 flex-col py-4 px-6 gap-4">
+    <a href="#layanan" class="text-gray-800 font-medium py-2">Layanan</a>
+    <a href="#jenis" class="text-gray-800 font-medium py-2">Jenis Partisi</a>
+    <a href="https://wa.me/6282132875755" class="bg-brand-600 text-white text-center py-3 rounded-xl font-semibold flex items-center justify-center gap-2">
+      <i class="ph-fill ph-whatsapp-logo text-xl"></i> Konsultasi
+    </a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative min-h-[85vh] flex items-center overflow-hidden pt-20">
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" alt="Partisi Modern" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-r from-slate2-900/95 via-slate2-900/80 to-slate2-900/40"></div>
+  </div>
+  <div class="container mx-auto px-4 md:px-8 relative z-10 py-20">
+    <div class="max-w-2xl reveal-up">
+      <span class="inline-block py-1 px-3 rounded-full bg-brand-500/20 text-brand-400 border border-brand-500/30 font-semibold text-sm mb-6 uppercase tracking-wider">Partisi Gypsum & GRC Bali</span>
+      <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+        Ruang Lebih <span class="text-brand-400">Fungsional</span> & Estetik
+      </h1>
+      <p class="text-gray-300 text-lg mb-10 leading-relaxed">Solusi penyekat ruangan premium menggunakan material gypsum, GRC, dan kaca modern. Hasil rapi, kuat, dan sesuai desain impian Anda.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="https://wa.me/6282132875755?text=Halo%20Jagad%20Bali!%20Saya%20ingin%20konsultasi%20partisi%20ruangan." class="flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white px-8 py-4 rounded-full font-bold transition-all shadow-glow">
+          <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Konsultasi Gratis
+        </a>
+        <a href="#jenis" class="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-full font-semibold transition-all">Lihat Jenis <i class="ph ph-arrow-down"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Keunggulan -->
+<section id="layanan" class="py-20 bg-white">
+  <div class="container mx-auto px-4 md:px-8">
+    <div class="text-center mb-16 reveal-up">
+      <h2 class="text-brand-600 font-semibold uppercase text-sm mb-2">Keunggulan Kami</h2>
+      <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Mengapa Memilih Partisi Jagad Bali?</h3>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 hover:shadow-soft transition-all reveal-up">
+        <div class="w-14 h-14 mx-auto bg-brand-100 text-brand-600 rounded-2xl flex items-center justify-center mb-5"><i class="ph-fill ph-ruler text-3xl"></i></div>
+        <h4 class="font-bold text-lg mb-2">Presisi Tinggi</h4>
+        <p class="text-gray-500 text-sm">Pemasangan menggunakan alat leveling profesional untuk hasil yang benar-benar lurus dan rapi.</p>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 hover:shadow-soft transition-all reveal-up" style="transition-delay:100ms">
+        <div class="w-14 h-14 mx-auto bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-5"><i class="ph-fill ph-soundcloud-logo text-3xl"></i></div>
+        <h4 class="font-bold text-lg mb-2">Kedap Suara</h4>
+        <p class="text-gray-500 text-sm">Dengan material dan lapisan yang tepat, partisi kami dapat mereduksi kebisingan antar ruangan secara signifikan.</p>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 hover:shadow-soft transition-all reveal-up" style="transition-delay:200ms">
+        <div class="w-14 h-14 mx-auto bg-orange-100 text-orange-500 rounded-2xl flex items-center justify-center mb-5"><i class="ph-fill ph-fire text-3xl"></i></div>
+        <h4 class="font-bold text-lg mb-2">Tahan Api</h4>
+        <p class="text-gray-500 text-sm">Gypsum dan GRC memiliki sifat tahan api alami yang meningkatkan keamanan bangunan Anda.</p>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 hover:shadow-soft transition-all reveal-up" style="transition-delay:300ms">
+        <div class="w-14 h-14 mx-auto bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-5"><i class="ph-fill ph-palette text-3xl"></i></div>
+        <h4 class="font-bold text-lg mb-2">Desain Fleksibel</h4>
+        <p class="text-gray-500 text-sm">Dapat dibuat berbagai bentuk, warna, dan finishing sesuai konsep interior ruangan Anda.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Jenis Partisi -->
+<section id="jenis" class="py-20 bg-slate2-900 text-white">
+  <div class="container mx-auto px-4 md:px-8">
+    <div class="text-center mb-16 reveal-up">
+      <h2 class="text-brand-500 font-semibold uppercase text-sm mb-2">Pilihan Material</h2>
+      <h3 class="text-3xl md:text-4xl font-bold">Jenis Partisi yang Kami Pasang</h3>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Gypsum -->
+      <div class="bg-surface border border-gray-700 rounded-2xl overflow-hidden group hover:border-brand-500/50 transition-all reveal-up">
+        <div class="h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Partisi Gypsum">
+        </div>
+        <div class="p-8">
+          <div class="inline-block bg-brand-500/10 text-brand-400 text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">Paling Populer</div>
+          <h4 class="text-2xl font-bold mb-3">Partisi Gypsum</h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">Pilihan paling ekonomis dan serbaguna. Rangka hollow galvanis dilapisi papan gypsum, permukaan halus siap dicat. Cocok untuk kantor, kamar, dan cafe.</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex gap-2 text-sm text-gray-300"><i class="ph-fill ph-check-circle text-brand-500 mt-0.5"></i> Harga terjangkau</li>
+            <li class="flex gap-2 text-sm text-gray-300"><i class="ph-fill ph-check-circle text-brand-500 mt-0.5"></i> Finishing cat bebas warna</li>
+            <li class="flex gap-2 text-sm text-gray-300"><i class="ph-fill ph-check-circle text-brand-500 mt-0.5"></i> Pemasangan cepat</li>
+          </ul>
+          <div class="text-2xl font-black text-brand-500">Mulai Rp 150.000<span class="text-sm font-normal text-gray-400"> / m2</span></div>
+        </div>
+      </div>
+      <!-- GRC -->
+      <div class="bg-surface border border-gray-700 rounded-2xl overflow-hidden group hover:border-brand-500/50 transition-all reveal-up" style="transition-delay:100ms">
+        <div class="h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Partisi GRC">
+        </div>
+        <div class="p-8">
+          <div class="inline-block bg-blue-500/10 text-blue-400 text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">Premium</div>
+          <h4 class="text-2xl font-bold mb-3">Partisi GRC Board</h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">Glass Reinforced Cement — lebih kuat dan tahan lembab dibanding gypsum biasa. Sangat cocok untuk area basah, dapur, atau outdoor. Ideal untuk villa dan proyek komersial.</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex gap-2 text-sm text-gray-300"><i class="ph-fill ph-check-circle text-brand-500 mt-0.5"></i> Tahan lembab & air</li>
+            <li class="flex gap-2 text-sm text-gray-300"><i class="ph-fill ph-check-circle text-brand-500 mt-0.5"></i> Lebih kuat dari gypsum</li>
+            <li class="flex gap-2 text-sm text-gray-300"><i class="ph-fill ph-check-circle text-brand-500 mt-0.5"></i> Cocok untuk area basah</li>
+          </ul>
+          <div class="text-2xl font-black text-brand-500">Mulai Rp 200.000<span class="text-sm font-normal text-gray-400"> / m2</span></div>
+        </div>
+      </div>
+      <!-- Kaca -->
+      <div class="bg-surface border border-gray-700 rounded-2xl overflow-hidden group hover:border-brand-500/50 transition-all reveal-up" style="transition-delay:200ms">
+        <div class="h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Partisi Kaca">
+        </div>
+        <div class="p-8">
+          <div class="inline-block bg-purple-500/10 text-purple-400 text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">Modern & Elegan</div>
+          <h4 class="text-2xl font-bold mb-3">Partisi Kaca Frameless</h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">Sekat ruangan dengan kaca tempered 8-12mm untuk tampilan modern, bersih, dan tetap terang. Tersedia kaca bening, frosted, atau film motif. Sangat populer untuk kantor dan restoran.</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex gap-2 text-sm text-gray-300"><i class="ph-fill ph-check-circle text-brand-500 mt-0.5"></i> Tampilan premium & modern</li>
+            <li class="flex gap-2 text-sm text-gray-300"><i class="ph-fill ph-check-circle text-brand-500 mt-0.5"></i> Ruangan tetap terang</li>
+            <li class="flex gap-2 text-sm text-gray-300"><i class="ph-fill ph-check-circle text-brand-500 mt-0.5"></i> Mudah dibersihkan</li>
+          </ul>
+          <div class="text-2xl font-black text-brand-500">Mulai Rp 350.000<span class="text-sm font-normal text-gray-400"> / m2</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-gray-500 text-xs mt-8">*Harga di atas adalah estimasi, belum termasuk material rangka. Hubungi kami untuk survei dan penawaran akurat.</p>
+  </div>
+</section>
+
+<!-- Galeri Proyek -->
+<section id="proyek" class="py-20 bg-white">
+  <div class="container mx-auto px-4 md:px-8">
+    <div class="text-center mb-16 reveal-up">
+      <h2 class="text-brand-600 font-semibold uppercase text-sm mb-2">Portofolio</h2>
+      <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Hasil Proyek Partisi Kami</h3>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="group relative rounded-2xl overflow-hidden reveal-up">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" alt="Proyek 1">
+        <div class="absolute inset-0 bg-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+          <p class="text-white text-sm font-bold">Partisi Kantor Denpasar</p>
+        </div>
+      </div>
+      <div class="group relative rounded-2xl overflow-hidden reveal-up" style="transition-delay:100ms">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=600&auto=format&fit=crop" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" alt="Proyek 2">
+        <div class="absolute inset-0 bg-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+          <p class="text-white text-sm font-bold">Ruang Rapat Singaraja</p>
+        </div>
+      </div>
+      <div class="group relative rounded-2xl overflow-hidden reveal-up" style="transition-delay:200ms">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=600&auto=format&fit=crop" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" alt="Proyek 3">
+        <div class="absolute inset-0 bg-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+          <p class="text-white text-sm font-bold">Partisi Kaca Cafe Seminyak</p>
+        </div>
+      </div>
+      <div class="group relative rounded-2xl overflow-hidden reveal-up" style="transition-delay:300ms">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600&auto=format&fit=crop" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" alt="Proyek 4">
+        <div class="absolute inset-0 bg-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+          <p class="text-white text-sm font-bold">Partisi GRC Villa Ubud</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Proses Kerja -->
+<section class="py-20 bg-slate2-50">
+  <div class="container mx-auto px-4 md:px-8">
+    <div class="text-center mb-16 reveal-up">
+      <h2 class="text-brand-600 font-semibold uppercase text-sm mb-2">Cara Kerja</h2>
+      <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Proses Mudah & Transparan</h3>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="text-center reveal-up">
+        <div class="w-16 h-16 bg-brand-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-black">1</div>
+        <h4 class="font-bold text-gray-900 mb-2">Konsultasi WA</h4>
+        <p class="text-gray-500 text-sm">Ceritakan kebutuhan dan ukuran ruangan Anda.</p>
+      </div>
+      <div class="text-center reveal-up" style="transition-delay:100ms">
+        <div class="w-16 h-16 bg-brand-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-black">2</div>
+        <h4 class="font-bold text-gray-900 mb-2">Survey & Desain</h4>
+        <p class="text-gray-500 text-sm">Tim kami datang ke lokasi, ukur, dan buat skema desain.</p>
+      </div>
+      <div class="text-center reveal-up" style="transition-delay:200ms">
+        <div class="w-16 h-16 bg-brand-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-black">3</div>
+        <h4 class="font-bold text-gray-900 mb-2">Pengerjaan</h4>
+        <p class="text-gray-500 text-sm">Dipasang oleh tim berpengalaman, bersih dan tepat waktu.</p>
+      </div>
+      <div class="text-center reveal-up" style="transition-delay:300ms">
+        <div class="w-16 h-16 bg-brand-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-black">4</div>
+        <h4 class="font-bold text-gray-900 mb-2">Serah Terima</h4>
+        <p class="text-gray-500 text-sm">Inspeksi bersama, pastikan hasil sesuai harapan. Bergaransi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16 bg-gradient-to-r from-brand-700 to-brand-500 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent"></div>
+  <div class="container mx-auto px-4 text-center relative z-10 reveal-up">
+    <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Survey Gratis ke Lokasi Anda!</h2>
+    <p class="text-green-100 text-lg max-w-xl mx-auto mb-10">Kirim ukuran ruangan via WhatsApp dan dapatkan estimasi biaya pemasangan partisi secara gratis.</p>
+    <a href="https://wa.me/6282132875755?text=Halo%20Jagad%20Bali!%20Saya%20ingin%20konsultasi%20partisi%20ruangan." class="inline-flex items-center gap-3 bg-white text-brand-700 px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-all shadow-xl">
+      <i class="ph-fill ph-whatsapp-logo text-3xl text-green-500"></i> Konsultasi via WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate2-900 pt-10 pb-6 border-t border-gray-800">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="font-bold text-2xl text-white">JAGAD<span class="text-brand-500">BALI</span></div>
+    <div class="text-gray-400 text-sm">Singaraja, Bali | +62 821-3287-5755 | &copy; 2026 Jagad Bali.</div>
+  </div>
+</footer>
+
+<!-- Floating WA -->
+<a href="https://wa.me/6282132875755" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl shadow-lg hover:scale-110 transition-all z-50">
+  <i class="ph-fill ph-whatsapp-logo"></i>
+</a>
+<script src="js/script.js"></script>
+</body>
+</html>
