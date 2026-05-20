@@ -59,11 +59,11 @@
 
     <!-- Sticky Navbar -->
     <nav id="navbar"
-        class="fixed w-full top-0 z-40 bg-white/95 dark:bg-dark/95 backdrop-blur-md border-b border-neutral-150 dark:border-neutral-800 py-3 shadow-sm transition-all">
+        class="fixed w-full top-0 z-40 bg-white/95 dark:bg-dark/95 backdrop-blur-md border-b border-neutral-150 dark:border-neutral-800 py-2 sm:py-3 shadow-sm transition-all">
         <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3.5 group">
-                <img src="assets/JBT.png" alt="UD JAGAD BALI Logo" class="h-14 w-auto object-contain transition-transform group-hover:scale-105">
-                <span class="font-poppins font-black text-2xl tracking-wider text-neutral-950 dark:text-white">
+            <a href="index.html" class="flex items-center gap-2 sm:gap-3.5 group">
+                <img src="assets/JBT.png" alt="UD JAGAD BALI Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain transition-transform group-hover:scale-105">
+                <span class="font-poppins font-black text-sm sm:text-lg md:text-2xl tracking-wider text-neutral-950 dark:text-white whitespace-nowrap">
                     UD JAGAD BALI
                 </span>
             </a>
@@ -79,16 +79,16 @@
             </div>
 
             <!-- Action Buttons -->
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-1.5 sm:gap-2">
                 <!-- Theme Toggle -->
-                <button id="theme-toggle" class="p-2.5 bg-neutral-100 dark:bg-neutral-800 rounded-full text-neutral-800 dark:text-white" aria-label="Toggle Theme">
-                    <i class="ph ph-moon text-xl"></i>
+                <button id="theme-toggle" class="p-2 sm:p-2.5 bg-neutral-100 dark:bg-neutral-800 rounded-full text-neutral-800 dark:text-white" aria-label="Toggle Theme">
+                    <i class="ph ph-moon text-lg sm:text-xl"></i>
                 </button>
 
                 <!-- Cart Button -->
-                <button id="cart-btn" class="relative p-2.5 bg-neutral-100 dark:bg-neutral-800 rounded-full text-neutral-800 dark:text-white" aria-label="Open Cart">
-                    <i class="ph ph-shopping-cart text-xl"></i>
-                    <span id="cart-count" class="absolute -top-1 -right-1 bg-brand-600 text-white text-[9px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center border border-white dark:border-dark">0</span>
+                <button id="cart-btn" class="relative p-2 sm:p-2.5 bg-neutral-100 dark:bg-neutral-800 rounded-full text-neutral-800 dark:text-white" aria-label="Open Cart">
+                    <i class="ph ph-shopping-cart text-lg sm:text-xl"></i>
+                    <span id="cart-count" class="absolute -top-1 -right-1 bg-brand-600 text-white text-[9px] font-extrabold w-4.5 h-4.5 sm:w-5 sm:h-5 rounded-full flex items-center justify-center border border-white dark:border-dark">0</span>
                 </button>
 
                 <!-- WhatsApp CS -->
@@ -96,6 +96,11 @@
                     class="hidden md:flex bg-neutral-950 dark:bg-neutral-800 hover:bg-brand-600 dark:hover:bg-brand-600 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-all shadow-md items-center gap-1.5">
                     <i class="ph-fill ph-whatsapp-logo text-base text-green-400"></i> Konsultasi Proyek
                 </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 sm:p-2.5 bg-neutral-100 dark:bg-neutral-800 rounded-full text-neutral-800 dark:text-white" aria-label="Toggle Menu">
+                    <i class="ph ph-list text-lg sm:text-xl"></i>
+                </button>
             </div>
         </div>
     </nav>
@@ -142,6 +147,35 @@
             <button id="whatsapp-checkout-btn" class="w-full mt-2.5 bg-brand-600 hover:bg-brand-700 text-white font-extrabold py-3.5 rounded-xl text-xs tracking-wider transition-all flex items-center justify-center gap-2 shadow-md shadow-brand-500/20">
                 <i class="ph-fill ph-whatsapp-logo text-base"></i> Instant Order Via WhatsApp
             </button>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Menu Drawer -->
+    <div id="mobile-menu-drawer"
+        class="fixed left-0 top-0 h-full w-full max-w-xs bg-white dark:bg-dark z-50 shadow-2xl -translate-x-full border-r border-neutral-200 dark:border-neutral-800 transition-transform duration-300 flex flex-col justify-between">
+        <div>
+            <div class="p-6 border-b border-neutral-200 dark:border-neutral-800 flex justify-between items-center bg-neutral-50 dark:bg-neutral-950">
+                <h3 class="font-poppins font-black text-neutral-900 dark:text-white flex items-center gap-2 text-sm uppercase tracking-wider">
+                    Menu Navigasi
+                </h3>
+                <button id="close-menu-btn" class="p-1 text-neutral-400 hover:text-brand-600 text-2xl">
+                    <i class="ph ph-x"></i>
+                </button>
+            </div>
+            <div class="flex flex-col p-6 space-y-4 text-xs font-bold uppercase tracking-wider">
+                <a href="#kategori" class="text-neutral-600 dark:text-neutral-300 hover:text-brand-600 py-2.5 border-b border-neutral-100 dark:border-neutral-850 mobile-nav-link">Kategori</a>
+                <a href="#produk-populer" class="text-neutral-600 dark:text-neutral-300 hover:text-brand-600 py-2.5 border-b border-neutral-100 dark:border-neutral-850 mobile-nav-link">Best Seller</a>
+                <a href="#jasa-pasang" class="text-neutral-600 dark:text-neutral-300 hover:text-brand-600 py-2.5 border-b border-neutral-100 dark:border-neutral-850 mobile-nav-link">Jasa Pasang</a>
+                <a href="#kalkulator-umum" class="text-neutral-600 dark:text-neutral-300 hover:text-brand-600 py-2.5 border-b border-neutral-100 dark:border-neutral-850 mobile-nav-link">Kalkulator</a>
+                <a href="#daftar-harga" class="text-neutral-600 dark:text-neutral-300 hover:text-brand-600 py-2.5 border-b border-neutral-100 dark:border-neutral-850 mobile-nav-link">Daftar Harga</a>
+                <a href="#faq" class="text-neutral-600 dark:text-neutral-300 hover:text-brand-600 py-2.5 border-b border-neutral-100 dark:border-neutral-850 mobile-nav-link">FAQ</a>
+                <a href="https://wa.me/6289518149338" target="_blank" class="flex bg-neutral-950 dark:bg-neutral-800 hover:bg-brand-600 dark:hover:bg-brand-600 text-white font-extrabold text-xs px-5 py-3 rounded-xl transition-all shadow-md items-center justify-center gap-1.5 mt-4">
+                    <i class="ph-fill ph-whatsapp-logo text-base text-green-400"></i> Konsultasi Proyek
+                </a>
+            </div>
+        </div>
+        <div class="p-6 text-center text-[10px] text-neutral-450 border-t border-neutral-150 dark:border-neutral-800">
+            © 2026 UD JAGAD BALI
         </div>
     </div>
 
@@ -632,7 +666,7 @@
 
             <div class="space-y-4">
                 <span class="font-bold text-white text-[11px] uppercase tracking-wider block">Workshop Jagad Bali</span>
-                <p>Jl. Buluh Indah No.99, Pemecutan Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80111</p>
+                <p>Jl. Singaraja, Pemaron, Kec. Buleleng, Kab Buleleng, Bali 81119</p>
                 <p class="font-bold text-white">Hubungi CS: 0817-0071-115</p>
             </div>
 

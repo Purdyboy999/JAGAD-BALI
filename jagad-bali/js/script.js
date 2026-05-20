@@ -243,14 +243,56 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cartDrawer && cartOverlay) {
             cartDrawer.classList.add('translate-x-full');
             cartDrawer.classList.remove('translate-x-0');
+            
+            // Only hide overlay if mobile menu is also closed
+            const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
+            const isMenuClosed = !mobileMenuDrawer || mobileMenuDrawer.classList.contains('-translate-x-full') || mobileMenuDrawer.classList.contains('translate-x-full');
+            if (isMenuClosed) {
+                cartOverlay.classList.add('hidden');
+            }
+        }
+    };
+
+    const closeMobileMenu = () => {
+        const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
+        if (mobileMenuDrawer) {
+            mobileMenuDrawer.classList.add('-translate-x-full');
+            mobileMenuDrawer.classList.remove('translate-x-0');
+        }
+        // Only hide overlay if cart is also closed
+        const isCartClosed = !cartDrawer || cartDrawer.classList.contains('translate-x-full');
+        if (cartOverlay && isCartClosed) {
             cartOverlay.classList.add('hidden');
         }
     };
 
+    const openMobileMenu = () => {
+        const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
+        if (mobileMenuDrawer && cartOverlay) {
+            mobileMenuDrawer.classList.remove('-translate-x-full');
+            mobileMenuDrawer.classList.add('translate-x-0');
+            cartOverlay.classList.remove('hidden');
+        }
+    };
+
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+    if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMobileMenu);
+    mobileNavLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
+
     if (cartBtn) cartBtn.addEventListener('click', openCart);
     if (closeCartBtn) closeCartBtn.addEventListener('click', closeCart);
-    if (cartOverlay) cartOverlay.addEventListener('click', closeCart);
     if (shopNowBtn) shopNowBtn.addEventListener('click', closeCart);
+
+    if (cartOverlay) {
+        cartOverlay.addEventListener('click', () => {
+            closeCart();
+            closeMobileMenu();
+        });
+    }
 
     // Add item to cart
     window.addToCart = (productId, quantity, isServiceIncluded = false, customDesc = "") => {
