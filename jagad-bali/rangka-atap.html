@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangka Atap Baja Ringan & Galvalum Bali | UD JAGAD BALI</title>
+    <meta name="description" content="Supplier baja ringan C75 TASO & Kencana, reng, atap spandek pasir, genteng metal pasir harga murah di Bali beserta kalkulator estimasi kebutuhan rangka atap.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            200: '#fecaca',
+                            300: '#fca5a5',
+                            400: '#f87171',
+                            500: '#ef4444', 
+                            600: '#dc2626', /* Crimson Red */
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d',
+                        },
+                        dark: {
+                            DEFAULT: '#121212',
+                            card: '#1e1e1e',
+                            muted: '#2d2d2d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-neutral-800 dark:text-neutral-200 antialiased bg-stone-50 dark:bg-dark transition-colors duration-300">
+
+    <!-- Sticky Navbar -->
+    <nav id="navbar"
+        class="fixed w-full top-0 z-40 bg-white/95 dark:bg-dark/95 backdrop-blur-md border-b border-neutral-150 dark:border-neutral-800 py-3 shadow-sm">
+        <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3.5 group">
+                <img src="assets/JBT.png" alt="UD JAGAD BALI Logo" class="h-14 w-auto object-contain transition-transform group-hover:scale-105">
+                <span class="font-poppins font-black text-2xl tracking-wider text-neutral-950 dark:text-white">
+                    UD JAGAD BALI
+                </span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-6">
+                <a href="index.html" class="text-neutral-600 dark:text-neutral-300 hover:text-brand-600 font-semibold text-xs uppercase tracking-wider">Beranda</a>
+                <a href="#katalog-atap" class="text-neutral-600 dark:text-neutral-300 hover:text-brand-600 font-semibold text-xs uppercase tracking-wider">Katalog</a>
+                <a href="#kalkulator-atap" class="text-neutral-600 dark:text-neutral-300 hover:text-brand-600 font-semibold text-xs uppercase tracking-wider">Kalkulator</a>
+                <a href="index.html#jasa-pasang" class="text-neutral-600 dark:text-neutral-300 hover:text-brand-600 font-semibold text-xs uppercase tracking-wider">Jasa Pasang</a>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <button id="theme-toggle" class="p-2.5 bg-neutral-100 dark:bg-neutral-800 rounded-full text-neutral-800 dark:text-white">
+                    <i class="ph ph-moon text-xl"></i>
+                </button>
+                <a href="index.html" class="bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-all shadow-md">
+                    Ke Toko Utama
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Hero -->
+    <header class="relative pt-32 pb-20 bg-neutral-950 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop" class="w-full h-full object-cover" alt="Steel framing construction">
+        </div>
+        <div class="container mx-auto px-4 md:px-8 relative z-10 text-center max-w-3xl">
+            <span class="text-xs font-bold text-brand-400 uppercase tracking-wider bg-brand-500/10 border border-brand-500/30 px-3 py-1 rounded-full">Kategori Rangka Atap</span>
+            <h1 class="text-3xl md:text-5xl font-poppins font-black text-white mt-4 mb-6 leading-tight">Baja Ringan & Genteng Metal</h1>
+            <p class="text-neutral-400 text-xs md:text-sm leading-relaxed mb-8">
+                Konstruksi atap rumah yang tangguh, presisi, dan tahan rayap. Kami mensuplai baja ringan berkualitas merk TASO & Kencana dengan ketebalan standar proyek beserta genteng metal flat pasir dan atap spandek galvalum.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#kalkulator-atap" class="bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs px-6 py-3.5 rounded-xl transition-colors">
+                    Kalkulator Rangka Atap
+                </a>
+                <a href="#katalog-atap" class="bg-neutral-900 border border-neutral-800 hover:bg-neutral-800 text-white font-bold text-xs px-6 py-3.5 rounded-xl transition-colors">
+                    Lihat Katalog Bahan
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: KALKULATOR RANGKA ATAP SUBPAGE -->
+    <section id="kalkulator-atap" class="py-20 bg-white dark:bg-dark transition-colors">
+        <div class="container mx-auto px-4 md:px-8 max-w-4xl">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold text-brand-600 dark:text-brand-500 uppercase tracking-widest block mb-1">Simulasi Anggaran</span>
+                <h2 class="text-2xl md:text-3xl font-poppins font-black text-neutral-950 dark:text-white">Kalkulator Rangka Atap Baja Ringan</h2>
+                <p class="text-xs text-neutral-400 mt-2">Dapatkan estimasi kebutuhan C-Truss C75, Reng, dan lembaran penutup atap berdasarkan dimensi dasar alas bangunan.</p>
+            </div>
+
+            <div class="bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-3xl p-6 md:p-8 grid md:grid-cols-12 gap-8 shadow-sm">
+                <!-- Inputs -->
+                <div class="md:col-span-7 space-y-4">
+                    <div>
+                        <label class="text-xs font-bold text-neutral-400 block mb-2">Luas Alas Datar Bangunan (m²):</label>
+                        <input type="number" id="atap-area" value="60" min="10"
+                            class="w-full bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl px-4 py-3 text-xs font-bold text-neutral-800 dark:text-white outline-none focus:border-brand-500">
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-xs font-bold text-neutral-400 block mb-2">Kemiringan Atap (°):</label>
+                            <input type="number" id="atap-slope" value="30" min="15" max="50"
+                                class="w-full bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl px-4 py-3 text-xs font-bold text-neutral-800 dark:text-white outline-none focus:border-brand-500">
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-neutral-400 block mb-2">Overstek Keliling (m):</label>
+                            <input type="number" id="atap-overstek" value="1.0" min="0" max="2" step="0.1"
+                                class="w-full bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl px-4 py-3 text-xs font-bold text-neutral-800 dark:text-white outline-none focus:border-brand-500">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="text-xs font-bold text-neutral-400 block mb-2">Pilih Penutup Atap:</label>
+                        <select id="atap-type" class="w-full bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl px-4 py-3 text-xs font-semibold text-neutral-800 dark:text-white outline-none focus:border-brand-500">
+                            <option value="spandek-pasir-30">Atap Spandek Pasir 0.30mm (Lebar 1m)</option>
+                            <option value="genteng-metal-pasir">Genteng Metal Pasir 2x4 (80cm x 80cm)</option>
+                        </select>
+                    </div>
+
+                    <button onclick="calculateAtap()" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-extrabold py-3.5 rounded-xl text-xs uppercase tracking-wider transition-colors shadow-md">
+                        Hitung Rangka & Penutup
+                    </button>
+                </div>
+
+                <!-- Outputs -->
+                <div class="md:col-span-5 bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-5 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-poppins font-bold text-xs text-neutral-900 dark:text-white border-b border-neutral-200 dark:border-neutral-850 pb-2 mb-4 uppercase tracking-wider">Taksiran Rincian</h4>
+                        
+                        <div class="space-y-3.5 text-xs">
+                            <div class="flex justify-between">
+                                <span class="text-neutral-400">Luas Atap Miring:</span>
+                                <span id="atap-res-area" class="font-bold text-neutral-900 dark:text-white">-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-neutral-400">Batang C75 TASO (6m):</span>
+                                <span id="atap-res-c75" class="font-bold text-neutral-900 dark:text-white">-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-neutral-400">Batang Reng TASO (6m):</span>
+                                <span id="atap-res-reng" class="font-bold text-neutral-900 dark:text-white">-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-neutral-400">Penutup Atap (Pcs/Lbr):</span>
+                                <span id="atap-res-tiles" class="font-bold text-neutral-900 dark:text-white">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-neutral-200 dark:border-neutral-800 pt-4 mt-6">
+                        <span class="text-[10px] text-neutral-400 block uppercase tracking-wider">Estimasi Total Harga Rangka:</span>
+                        <div id="atap-res-cost" class="text-xl font-black text-brand-600 dark:text-brand-500 font-poppins">Rp 0</div>
+                        
+                        <button id="atap-add-cart" disabled class="w-full mt-4 bg-neutral-950 hover:bg-brand-600 text-white font-extrabold py-3 rounded-xl text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-1.5 opacity-50 cursor-not-allowed">
+                            <i class="ph ph-shopping-cart"></i> Masukkan Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: CATALOGUE FILTERED ATAP -->
+    <section id="katalog-atap" class="py-20 bg-stone-50 dark:bg-neutral-900/50 transition-colors">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-xs font-bold text-brand-600 dark:text-brand-500 uppercase tracking-widest block mb-1">Daftar Rangka</span>
+                <h2 class="text-2xl md:text-3xl font-poppins font-black text-neutral-950 dark:text-white">Katalog Baja Ringan & Atap</h2>
+            </div>
+
+            <!-- List Products of Atap -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4" id="atap-items-list">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-950 text-neutral-400 py-10 border-t border-neutral-900 text-center text-xs">
+        <p class="mb-2">© 2026 UD JAGAD BALI. Semua Hak Cipta Dilindungi.</p>
+        <a href="index.html" class="text-brand-500 hover:underline">Kembali ke Beranda</a>
+    </footer>
+
+    <!-- Theme & Catalog Injector JS -->
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('atap-items-list');
+            if (container) {
+                const atapProducts = [
+                    { id: "truss-taso-75", name: "Baja Ringan C75 TASO 0.75mm", price: 95000, unit: "batang", image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=200&auto=format&fit=crop", desc: "Truss TASO 6m anti karat, tebal SNI prima." },
+                    { id: "truss-kencana-75", name: "Baja Ringan C75 Kencana 0.75mm", price: 88000, unit: "batang", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=200&auto=format&fit=crop", desc: "Truss C75 Kencana galvalum kokoh bergaransi SNI." },
+                    { id: "reng-taso-45", name: "Reng Baja Ringan TASO 0.45mm", price: 48000, unit: "batang", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=200&auto=format&fit=crop", desc: "Reng TASO 6m penahan dudukan genteng/spandek." },
+                    { id: "spandek-pasir-30", name: "Atap Spandek Pasir 0.30mm", price: 62000, unit: "lembar", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=200&auto=format&fit=crop", desc: "Atap spandek pasir peredam bising & panas matahari." },
+                    { id: "genteng-metal-pasir", name: "Genteng Metal Pasir 2x4", price: 35000, unit: "lembar", image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=200&auto=format&fit=crop", desc: "Genteng logam flat berlapis pasir anti karat bocor." }
+                ];
+
+                atapProducts.forEach(p => {
+                    const html = `
+                        <div class="bg-white dark:bg-neutral-900 rounded-2xl overflow-hidden shadow-sm border border-neutral-200 dark:border-neutral-800 p-4 flex flex-col justify-between h-[340px] group">
+                            <div>
+                                <img src="${p.image}" class="w-full h-24 object-cover rounded-xl mb-3" alt="${p.name}">
+                                <h4 class="font-poppins font-bold text-[11px] text-neutral-900 dark:text-white leading-tight">${p.name}</h4>
+                                <p class="text-[9px] text-neutral-400 mt-1.5 line-clamp-2 leading-relaxed">${p.desc}</p>
+                            </div>
+                            <div class="border-t border-neutral-100 dark:border-neutral-800 pt-3">
+                                <span class="text-xs font-black text-brand-600 dark:text-brand-500 block">Rp ${p.price.toLocaleString('id-ID')} / ${p.unit}</span>
+                                <button onclick="addToCart('${p.id}', 1, false, 'Pembelian Material')" class="w-full mt-3.5 bg-neutral-950 hover:bg-brand-600 text-white font-extrabold py-2 rounded-xl text-[9px] uppercase tracking-wider transition-colors">
+                                    + Keranjang
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', html);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

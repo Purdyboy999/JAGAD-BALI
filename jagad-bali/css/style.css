@@ -1,32 +1,33 @@
 /* 
-  Custom CSS for Jagad Bali
+  Custom CSS for UD Jagad Bali
   Most styling is handled by Tailwind CSS classes in HTML.
   This file contains specific overrides and custom animations.
 */
 
-/* Custom Scrollbar */
+/* Custom Scrollbar - Crimson Red & Dark Theme */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
+    height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f5f9; 
+    background: #121212; /* Dark background */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #cbd5e1; 
-    border-radius: 4px;
+    background: #dc2626; /* Crimson Red */
+    border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #94a3b8; 
+    background: #ef4444; /* Lighter Red */
 }
 
 /* Scroll Reveal Utilities */
 .reveal-up {
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal-up.active {
@@ -34,34 +35,86 @@
     transform: translateY(0);
 }
 
-/* Glassmorphism Utilities */
-.glass {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
+/* Glassmorphism & Crimson Theme Utilities */
 .glass-dark {
-    background: rgba(18, 18, 18, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(18, 18, 18, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(220, 38, 38, 0.15);
 }
 
-/* Fix for smooth scrolling offset due to fixed navbar */
+.glass-light {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Crimson Gradient Utilities */
+.text-brand-gradient {
+    background: linear-gradient(135deg, #fee2e2 0%, #dc2626 50%, #991b1b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-brand-gradient {
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #991b1b 100%);
+}
+
+.border-brand {
+    border-color: rgba(220, 38, 38, 0.4);
+}
+
+.border-brand:hover {
+    border-color: rgba(220, 38, 38, 0.8);
+}
+
+/* Cart Drawer Slider */
+#cart-drawer {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#cart-drawer.translate-x-full {
+    transform: translateX(100%);
+}
+
+#cart-drawer.translate-x-0 {
+    transform: translateX(0);
+}
+
+/* Custom Accordion for FAQs */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-item.active .faq-content {
+    max-height: 250px;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+/* Scroll Offset for Navigation */
 html {
     scroll-padding-top: 80px;
 }
 
-/* Masonry Grid fallback just in case */
-@media (min-width: 640px) {
-    .columns-2 {
-        column-count: 2;
+/* Shimmer/Pulse effect for floating elements */
+@keyframes brand-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(220, 38, 38, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
     }
 }
-@media (min-width: 1024px) {
-    .columns-3 {
-        column-count: 3;
-    }
+
+.pulse-brand {
+    animation: brand-pulse 2s infinite;
 }

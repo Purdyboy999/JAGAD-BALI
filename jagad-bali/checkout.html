@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review & Checkout Order | UD JAGAD BALI</title>
+    <meta name="description" content="Tinjau kembali rincian pemesanan material plafon PVC, gypsum, baja ringan, partisi, dan jasa pemasangan. Selesaikan pemesanan via WhatsApp.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            200: '#fecaca',
+                            300: '#fca5a5',
+                            400: '#f87171',
+                            500: '#ef4444', 
+                            600: '#dc2626', /* Crimson Red */
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d',
+                        },
+                        dark: {
+                            DEFAULT: '#121212',
+                            card: '#1e1e1e',
+                            muted: '#2d2d2d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-neutral-800 dark:text-neutral-200 antialiased bg-stone-50 dark:bg-dark transition-colors duration-300">
+
+    <!-- Sticky Navbar -->
+    <nav id="navbar"
+        class="fixed w-full top-0 z-40 bg-white/95 dark:bg-dark/95 backdrop-blur-md border-b border-neutral-150 dark:border-neutral-800 py-3 shadow-sm">
+        <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3.5 group">
+                <img src="assets/JBT.png" alt="UD JAGAD BALI Logo" class="h-14 w-auto object-contain transition-transform group-hover:scale-105">
+                <span class="font-poppins font-black text-2xl tracking-wider text-neutral-950 dark:text-white">
+                    UD JAGAD BALI
+                </span>
+            </a>
+
+            <div class="flex items-center gap-2">
+                <button id="theme-toggle" class="p-2.5 bg-neutral-100 dark:bg-neutral-800 rounded-full text-neutral-800 dark:text-white">
+                    <i class="ph ph-moon text-xl"></i>
+                </button>
+                <a href="index.html" class="bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-all shadow-md">
+                    Kembali Belanja
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 md:px-8 pt-32 pb-20 max-w-5xl">
+        <h1 class="text-2xl md:text-3xl font-poppins font-black text-neutral-950 dark:text-white mb-2 flex items-center gap-2">
+            <i class="ph ph-shopping-bag text-brand-600"></i> Review Order Proyek Anda
+        </h1>
+        <p class="text-xs text-neutral-400 mb-8">Tinjau kembali rincian material belanjaan Anda dan lengkapi data proyek di bawah ini.</p>
+
+        <div class="grid md:grid-cols-12 gap-8">
+            <!-- Left: Buyer Details Form -->
+            <div class="md:col-span-7 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 md:p-8 rounded-3xl space-y-6 shadow-sm">
+                <h4 class="font-poppins font-bold text-base text-neutral-900 dark:text-white border-b border-neutral-150 dark:border-neutral-800 pb-3">Informasi Pelanggan & Alamat Proyek</h4>
+                
+                <div class="space-y-4 text-xs">
+                    <div>
+                        <label class="font-bold text-neutral-450 dark:text-neutral-400 block mb-2">Nama Pemesan / Kontraktor *</label>
+                        <input type="text" id="cust-name" placeholder="Masukkan nama Anda" required
+                            class="w-full bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl px-4 py-3 font-semibold text-neutral-800 dark:text-white outline-none focus:border-brand-500 transition-colors">
+                    </div>
+
+                    <div>
+                        <label class="font-bold text-neutral-455 dark:text-neutral-400 block mb-2">Nomor WhatsApp Proyek *</label>
+                        <input type="tel" id="cust-phone" placeholder="Contoh: 08123456789" required
+                            class="w-full bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl px-4 py-3 font-semibold text-neutral-800 dark:text-white outline-none focus:border-brand-500 transition-colors">
+                    </div>
+
+                    <div>
+                        <label class="font-bold text-neutral-460 dark:text-neutral-400 block mb-2">Metode Penyerahan Barang *</label>
+                        <select id="cust-delivery" class="w-full bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl px-4 py-3 font-semibold text-neutral-800 dark:text-white outline-none focus:border-brand-500 transition-colors">
+                            <option value="Kirim Armada Jagad Bali">Kirim Menggunakan Pickup UD Jagad Bali</option>
+                            <option value="Ambil Sendiri">Ambil Sendiri ke Workshop UD Jagad Bali</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="font-bold text-neutral-465 dark:text-neutral-400 block mb-2">Alamat Pengiriman / Lokasi Pemasangan Jasa</label>
+                        <textarea id="cust-address" placeholder="Tulis alamat lokasi proyek secara detail" rows="3"
+                            class="w-full bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl px-4 py-3 font-semibold text-neutral-800 dark:text-white outline-none focus:border-brand-500 transition-colors resize-none"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Order Items List -->
+            <div class="md:col-span-5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 rounded-3xl shadow-sm flex flex-col justify-between">
+                <div>
+                    <h4 class="font-poppins font-bold text-sm text-neutral-900 dark:text-white border-b border-neutral-150 dark:border-neutral-800 pb-3">Ringkasan Keranjang</h4>
+                    
+                    <div id="checkout-items-list" class="space-y-4 mt-4 overflow-y-auto max-h-72">
+                        <!-- Loaded via JS -->
+                    </div>
+                </div>
+
+                <div class="border-t border-neutral-150 dark:border-neutral-800 pt-6 mt-6">
+                    <div class="flex justify-between items-baseline mb-4">
+                        <span class="text-xs text-neutral-400 font-bold">Total Pembayaran:</span>
+                        <span id="checkout-total-price" class="text-2xl font-black text-brand-600 dark:text-brand-500">Rp 0</span>
+                    </div>
+
+                    <button id="checkout-wa-btn" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-extrabold py-3.5 rounded-xl text-xs tracking-wider transition-all flex items-center justify-center gap-2 shadow-md shadow-brand-500/20">
+                        <i class="ph-fill ph-whatsapp-logo text-base"></i>
+                        Kirim Order Ke WhatsApp
+                    </button>
+                    <p class="text-[10px] text-neutral-400 mt-3 text-center leading-relaxed">Admin CS kami akan memverifikasi kesiapan pengiriman barang, menjadwalkan survey lokasi jasa pasang (bila ada), dan memandu pembayaran.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-950 text-neutral-400 py-10 border-t border-neutral-900 text-center text-xs">
+        <p class="mb-2">© 2026 UD JAGAD BALI. Semua Hak Cipta Dilindungi.</p>
+        <a href="index.html" class="text-brand-500 hover:underline">Kembali ke Beranda</a>
+    </footer>
+
+    <!-- Theme Toggle & Checkout JS -->
+    <script>
+        const themeBtn = document.getElementById('theme-toggle');
+        const applyTheme = () => {
+            const currentTheme = localStorage.getItem('jagad_theme') || 'light';
+            if (currentTheme === 'dark') {
+                document.documentElement.classList.add('dark');
+                if (themeBtn) themeBtn.innerHTML = '<i class="ph ph-sun text-xl text-yellow-500"></i>';
+            } else {
+                document.documentElement.classList.remove('dark');
+                if (themeBtn) themeBtn.innerHTML = '<i class="ph ph-moon text-xl text-neutral-600"></i>';
+            }
+        };
+
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('jagad_theme', 'light');
+                    themeBtn.innerHTML = '<i class="ph ph-moon text-xl text-neutral-600"></i>';
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('jagad_theme', 'dark');
+                    themeBtn.innerHTML = '<i class="ph ph-sun text-xl text-yellow-500"></i>';
+                }
+            });
+        }
+        applyTheme();
+
+        // Load cart
+        let cart = [];
+        try {
+            const stored = localStorage.getItem('jagad_bali_cart');
+            if (stored) cart = JSON.parse(stored);
+        } catch (e) {
+            console.error(e);
+        }
+
+        const formatRupiah = (value) => {
+            return "Rp " + value.toLocaleString('id-ID');
+        };
+
+        const renderCheckoutList = () => {
+            const container = document.getElementById('checkout-items-list');
+            const totalEl = document.getElementById('checkout-total-price');
+            
+            if (!container) return;
+
+            container.innerHTML = '';
+            let total = 0;
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-10 text-neutral-400">
+                        <i class="ph ph-shopping-cart text-3xl mb-1"></i>
+                        <p class="text-xs">Keranjang kosong. <a href="index.html" class="text-brand-500 font-bold hover:underline">Belanja sekarang</a></p>
+                    </div>
+                `;
+                if (totalEl) totalEl.textContent = formatRupiah(0);
+                return;
+            }
+
+            cart.forEach(item => {
+                const subtotal = item.pricePerUnit * item.quantity;
+                total += subtotal;
+
+                const itemHtml = `
+                    <div class="p-3 bg-neutral-50 dark:bg-neutral-900 border border-neutral-150 dark:border-neutral-850 rounded-xl flex justify-between items-start gap-2 text-xs">
+                        <div>
+                            <span class="font-extrabold text-neutral-900 dark:text-white block leading-tight">${item.name}</span>
+                            <span class="text-neutral-500 dark:text-neutral-400 text-[10px] block mt-0.5">${item.description}</span>
+                        </div>
+                        <div class="text-right shrink-0">
+                            <span class="text-xs font-bold text-neutral-400 block">x${item.quantity} ${item.unit || 'pcs'}</span>
+                            <span class="text-xs font-bold text-brand-600 dark:text-brand-500 mt-1 block">${formatRupiah(subtotal)}</span>
+                        </div>
+                    </div>
+                `;
+                container.insertAdjacentHTML('beforeend', itemHtml);
+            });
+
+            if (totalEl) totalEl.textContent = formatRupiah(total);
+        };
+
+        renderCheckoutList();
+
+        // Send to WA
+        const waBtn = document.getElementById('checkout-wa-btn');
+        if (waBtn) {
+            waBtn.addEventListener('click', () => {
+                const name = document.getElementById('cust-name').value.trim();
+                const phone = document.getElementById('cust-phone').value.trim();
+                const delivery = document.getElementById('cust-delivery').value;
+                const address = document.getElementById('cust-address').value.trim();
+
+                if (!name || !phone) {
+                    alert("Mohon isi Nama Pemesan dan Nomor WhatsApp terlebih dahulu.");
+                    return;
+                }
+
+                if (cart.length === 0) {
+                    alert("Keranjang belanja Anda kosong.");
+                    return;
+                }
+
+                let message = `*HALO UD JAGAD BALI, BERIKUT DETAIL ORDER MATERIAL SAYA:*\n\n`;
+                message += `*DETAIL PELANGGAN:*\n`;
+                message += `- Nama Pemesan: ${name}\n`;
+                message += `- WhatsApp: ${phone}\n`;
+                message += `- Metode Kirim: ${delivery}\n`;
+                if (address) message += `- Alamat Proyek: ${address}\n`;
+                message += `\n*RINCIAN BARANG & JASA:*\n`;
+
+                let subtotal = 0;
+                cart.forEach((item, index) => {
+                    const itemSub = item.pricePerUnit * item.quantity;
+                    subtotal += itemSub;
+                    message += `${index + 1}. *${item.name}*\n   - Keterangan: ${item.description}\n   - Qty: ${item.quantity} ${item.unit || 'pcs'}\n   - Subtotal: ${formatRupiah(itemSub)}\n\n`;
+                });
+
+                message += `-------------------------\n*TOTAL ESTIMASI: ${formatRupiah(subtotal)}*\n\nMohon dicek stok bahan dan ketersediaan pengiriman. Terima kasih!`;
+
+                const waNumber = "628170071115";
+                const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
+                window.open(waUrl, '_blank');
+            });
+        }
+    </script>
+</body>
+
+</html>
